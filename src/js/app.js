@@ -1,18 +1,21 @@
-function start() {
+function startMain() {
 
-    let sizeBoard = 4;
-    let random = getRandomInt(sizeBoard ^ 2);
-    let n = 0
+    const sizeBoard = 4;
+    const random = getRandomInt(Math.pow(sizeBoard, 2));
+    let n = 0;
+
     for (let i = 0; i < sizeBoard; i++) {
-        n = n + 1;
+        let img = "#";
+        n = ++;
         for (let b = 0; b < sizeBoard; b++) {
-
-
+            if (random === n) {
+                img = './img/netology.svg';
+            }
             let div = `<div class = "w" id=${String(n)}>
-              <a href='./img/netology.svg'>
+              <a href=${img}>
               </div>`;
             document.section.append(div);
-            n = n + 1;
+            n = ++;
         }
     };
 }
