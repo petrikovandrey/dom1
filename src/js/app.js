@@ -28,5 +28,6 @@ function updateBord() {
     document.getElementById(String(randomN)).href = './img/goblin.png';
   }, 2);
 }
+
 startMain();
 updateBord();
