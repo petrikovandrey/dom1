@@ -9,7 +9,7 @@ function startMain() {
         n++;
         for (let b = 0; b < sizeBoard; b++) {
             if (random === n) {
-                img = './img/netology.svg';
+                img = "./img/netology.svg";
             }
             let div = `<div class = "w" id=${String(n)}>
               <a href=${img}>
