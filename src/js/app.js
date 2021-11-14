@@ -6,7 +6,7 @@ function startMain() {
 
     for (let i = 0; i < sizeBoard; i++) {
         let img = "#";
-        n = ++;
+        n++;
         for (let b = 0; b < sizeBoard; b++) {
             if (random === n) {
                 img = './img/netology.svg';
@@ -15,7 +15,7 @@ function startMain() {
               <a href=${img}>
               </div>`;
             document.section.append(div);
-            n = ++;
+            n++;
         }
     };
 }
