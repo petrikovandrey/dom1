@@ -6,18 +6,18 @@ const section = document.querySelector("section");
 // TODO: write your code in app.js
 function start() {
 
-    let value = "";
+    // let value = "";
     let sizeBoard = 4;
     let random = getRandomInt(sizeBoard * sizeBoard);
-    let board = [];
+    // let board = [];
     let n = 0
     for (let i = 0; i < sizeBoard; i++) {
         n += 1;
         let row = [];
 
-        board.push(row);
+        // board.push(row);
         for (let b = 0; b < sizeBoard; b++) {
-            board[i].push(value);
+            // board[i].push(value);
             newDiv(n, random);
             n += 1;
         }
