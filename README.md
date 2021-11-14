@@ -1,1 +1,1 @@
-# dom1
+[![Build status](https://ci.appveyor.com/api/projects/status/4rsi91yq76mrk7ot?svg=true)](https://ci.appveyor.com/project/petrikovandrey/dom1)
