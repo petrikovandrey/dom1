@@ -12,7 +12,7 @@ function startMain() {
                 img = "./img/netology.svg";
             }
             let div = `<div class = "w" id=${String(n)}>
-              <a href=${img}>
+              <a href="./img/netology.svg">
               </div>`;
             document.section.append(div);
             n++;
