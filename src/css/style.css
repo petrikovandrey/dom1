@@ -14,3 +14,6 @@ section {
 html {
     max-width: 260px;
 }
+.center {
+    max-width: 20px;
+}
