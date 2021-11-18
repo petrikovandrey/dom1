@@ -2,6 +2,22 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
+function updateBord() {
+  setInterval(() => {
+    let randomN = getRandomInt(16);
+    const img = document.querySelector('img');
+    if (img != null) {
+      while (randomN === img.parentNode.id) {
+        randomN = getRandomInt(16);
+      }
+
+      img.remove();
+      const div = document.getElementById(String(randomN));
+      div.insertAdjacentHTML('afterbegin', '<img class="center" src=https://github.com/netology-code/ahj-homeworks/raw/simplification/dom/pic/goblin.png>');
+    }
+  }, 2000);
+}
+
 function startMain() {
   const content = document.querySelector('section');
   const sizeBoard = 4;
@@ -21,22 +37,6 @@ function startMain() {
     }
   }
   updateBord();
-}
-
-function updateBord() {
-  setInterval(() => {
-    const randomN = getRandomInt(16);
-    const img = document.querySelector('.center');
-    if (img != null) {
-      while (randomN === img.parentNode.id) {
-        randomN = getRandomInt(16);
-      }
-
-      img.remove();
-      let div = document.getElementById(String(randomN));
-      div.insertAdjacentHTML('afterbegin', '<img class="center" src=https://github.com/netology-code/ahj-homeworks/raw/simplification/dom/pic/goblin.png>');
-    }
-  }, 2000);
 }
 
 startMain();
