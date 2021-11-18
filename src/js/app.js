@@ -40,4 +40,3 @@ function startMain() {
 }
 
 startMain();
-
